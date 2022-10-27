@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    tools:context=".FRAGMENT.HomeFragment"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_home"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:elevation="10dp">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/slide_on_boarding"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                <LinearLayout
+                    android:id="@+id/indicator_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom|center"
+                    />
+            </FrameLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_gravity="center"
+          >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:textColor="#373636"
+                android:paddingHorizontal="30dp"
+                android:layout_marginTop="70dp"
+
+                android:textSize="20dp"
+                android:text="Dù có nhiều tiền đến đâu thì bạn cũng chẳng thể nào mua nổi những khoảng thời gian đã trôi qua. Thế nên hãy biết trân trọng những phút giây mà mình đang có nhé. Hãy tận hưởng nó như thể bạn chỉ còn ngày cuối cùng để tận hưởng mà thôi."
+                android:fontFamily="@font/pacifico"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="bottom"
+               android:gravity="bottom"
+               android:paddingHorizontal="20dp"
+               android:textColor="#737070"
+               android:textSize="20dp"
+               android:layout_marginBottom="68dp"
+                android:text="I love three things in the world, the sun,the moon ,and you.The sun for day,the moon for night and you for forever."
+               android:fontFamily="@font/caveat"/>
+       </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

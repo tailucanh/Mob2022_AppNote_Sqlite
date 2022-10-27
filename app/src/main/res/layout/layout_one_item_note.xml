@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="165dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dp"
+    android:layout_gravity="center|top"
+    >
+
+        <LinearLayout
+            android:id="@+id/layout_one_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="8dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/custom_solid_one_item_3"
+            >
+                <TextView
+                    android:id="@+id/tv_title_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/mali"/>
+
+                <TextView
+                    android:id="@+id/tv_content_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dongle"
+                    android:gravity="left"
+                    android:text="Thông tin content của bạn"
+                    android:lineHeight="19dp"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mali"
+                    android:gravity="right"
+                    android:text="Delete"
+                    android:textColor="#ED1B1B"
+                    android:textSize="14dp" />
+        </LinearLayout>
+
+</LinearLayout>
